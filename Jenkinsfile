@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                url: 'https://github.com/your-username/devops-project.git'
+                git branch: 'master',
+                url: 'https://github.com/kaiwalya65/project1.git'
             }
         }
         
@@ -19,7 +19,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                sh 'python -m pytest tests/'  # Assuming you have tests
+                sh 'python -m pytest tests/'  
             }
         }
         
