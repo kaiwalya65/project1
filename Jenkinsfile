@@ -19,7 +19,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                sh 'python -m pytest tests/'  # Assuming you have tests
+                sh 'python -m pytest tests/'  
             }
         }
         
